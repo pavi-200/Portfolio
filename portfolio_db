@@ -1,0 +1,28 @@
+CREATE DATABASE portfolio_db;
+
+USE portfolio_db;
+
+CREATE TABLE projects (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100),
+    description TEXT,
+    technology VARCHAR(255),
+    github_link VARCHAR(255)
+);
+INSERT INTO projects(title, description, technology, github_link)
+VALUES
+(
+'Job Recommender System Using Machine Learning',
+'Machine learning-based application that recommends suitable jobs to users based on their skills, qualifications, and interests.',
+'Python, Machine Learning, Pandas, Scikit-learn, HTML, CSS',
+'https://github.com/yourusername/job-recommender-system'
+);
+
+INSERT INTO projects(title, description, technology, github_link)
+VALUES
+(
+'Dictionary Application',
+'Dictionary application that allows users to search word meanings, synonyms, antonyms, and pronunciations.',
+'Python, Tkinter, Dictionary API',
+'https://github.com/pavi-200/DIC-TIO-NARY'
+);
